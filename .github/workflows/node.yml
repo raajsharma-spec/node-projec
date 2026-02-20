@@ -15,7 +15,11 @@ jobs:
         with:
           node-version: 18
 
-      - run: npm install
+      - name: Show Current Folder
+        run: pwd
 
-      - name: Run AI Agent
-        run: node node-projec/agent.js
+      - name: Show All Files
+        run: ls -R
+
+      - name: Find agent.js
+        run: find . -name agent.js
