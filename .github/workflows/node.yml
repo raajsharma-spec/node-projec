@@ -21,4 +21,5 @@ jobs:
         run: npm install
 
       - name: Run AI Agent
+        working-directory: node-projec
         run: node agent.js
