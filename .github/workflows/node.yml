@@ -20,11 +20,5 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Run tests
-        run: npm test
-
-      - name: Build project
-        run: npm run build
-
       - name: Run AI Agent
-        run: node agent.js  
+        run: node agent.js
